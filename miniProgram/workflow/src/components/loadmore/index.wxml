@@ -1,0 +1,19 @@
+<template name="wnt-loadmore">
+  <block wx:if="{{nomore}}">
+    <view class="wnt-loadmore wnt-loadmore--nomore">
+        loading....
+    </view>
+  </block>
+
+  <block wx:elif="{{nodata}}">
+    <view class="wnt-loadmore wnt-loadmore--nodata">
+      nodata
+    </view>
+  </block>
+
+  <block wx:elif="{{loading}}">
+    <view class="wnt-loadmore wnt-loadmore--loading">
+
+    </view>
+  </block>
+</template>

@@ -1,0 +1,30 @@
+.wnt-switch {
+  display: inline-block;
+  border: 1px solid #d13919;
+  border-radius: 100px;
+  width: 50px;
+  padding: 3px;
+}
+
+.wnt-switch__circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background: gray;
+  transform: translateX(0);
+  transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.wnt-switch__circle--on {
+  background: #d13919;
+  transform: translateX(30px);
+  transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.wnt-switch--disable {
+  border: 1px solid gray;
+}
+
+.wnt-switch--disable .wnt-switch__circle {
+  background: gray;
+}

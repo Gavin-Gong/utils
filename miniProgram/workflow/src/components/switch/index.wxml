@@ -1,0 +1,12 @@
+<template name="wnt-switch">
+  <view
+    data-event="{{event}}"
+    data-disable="{{!!disable}}"
+    data-on="{{on === undefined || on ? true : false }}"  
+    class="wnt-switch {{disable ? 'wnt-switch--disable' : ''}}" 
+    bindtap="_handleWntSwitch">
+    <view
+      class="wnt-switch__circle {{on === undefined || on ? 'wnt-switch__circle--on' : ''}}">
+    </view>
+  </view>
+</template>

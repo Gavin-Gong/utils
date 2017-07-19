@@ -1,0 +1,12 @@
+<import src="/components/switch/index.wxml"/>
+<import src="/components/checkbox/index.wxml"/>
+
+<view id="demo">
+ <view>
+    <text>Demo</text>
+    <template is="wnt-switch" data="{{ ...switch1 }}" bindTap="fuckTap">   </template>
+    <template is="wnt-switch" data="{{ ...switch2 }}" bindTap="fuckTap">   </template>
+
+    <template is="wnt-checkbox" data="{{...checkbox1}}"></template>
+ </view>
+</view>

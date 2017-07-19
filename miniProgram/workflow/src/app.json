@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/feed/feed",
+    "pages/demo/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#d13919",
+    "navigationBarTitleText": "微弄堂",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#ff44336",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/earth.png",
+      "selectedIconPath": "icons/earth.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "icons/mail.png",
+      "selectedIconPath": "icons/mail.png"
+    }]
+  }
+}

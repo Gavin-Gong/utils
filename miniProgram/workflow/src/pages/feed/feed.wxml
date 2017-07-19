@@ -1,0 +1,29 @@
+<view id="feed">
+  <view 
+    wx:for="{{listData}}"
+    wx:key="index"
+    class="item">
+      <image 
+        class="headimg"
+        mode="aspectFill"
+        src="{{item.headimg}}" />
+      <view class="item__box">
+        <view>
+          <text class="item__title">{{item.title}}</text>
+          <text class="item__desc">{{item.description}}</text>
+        </view>
+        <view class="item__info">
+          <view class="item__info__item">
+              动态 <text>{{item.dynamicCount}}</text>
+          </view>
+          <view class="item__info__item">
+              动态 <text>{{item.followCount}}</text>
+          </view>
+          <view class="item__info__item">
+              动态 <text>{{item.vipCount}}</text>
+          </view>
+          <button type="default" size="mini">Button</button>
+        </view>
+      </view>
+  </view>
+</view>

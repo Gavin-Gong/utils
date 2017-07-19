@@ -1,0 +1,5 @@
+<template name="wnt-checkbox">
+  <view class="wnt-checkbox">
+    <checkbox></checkbox>
+  </view>
+</template>

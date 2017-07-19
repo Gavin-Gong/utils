@@ -1,0 +1,14 @@
+{
+  "extends": "standard",
+    "overrides": [
+    {
+      "files": [ "src/**/*.js"]
+    }
+  ],
+  "globals": {
+    "wx": true,
+    "getApp": true,
+    "Page": true,
+    "App": true
+  }
+}

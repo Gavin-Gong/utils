@@ -1,0 +1,41 @@
+#feed .item {
+  display: flex;
+  border: 1rpx solid #eee;
+}
+
+#feed .item .headimg {
+  height: 180rpx;
+}
+
+#feed .item .item__box {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#feed .item__title {
+  font-size: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+#feed .item__desc {
+  display: block;
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+#feed .item__info__item {
+  font-size: 14px;
+  display: inline-block;
+}
+
+#feed .item__info button {
+  width: 20px;
+  padding: 0;
+}

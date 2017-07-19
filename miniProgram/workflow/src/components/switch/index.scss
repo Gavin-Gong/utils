@@ -1,0 +1,29 @@
+@import "../../styles/vars";
+$disableColor: gray;
+
+.wnt-switch {
+  display: inline-block;
+  border: 1px solid $baseColor;
+  border-radius: 100px;
+  width: 50px;
+  padding: 3px;
+  &__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: $disableColor;
+    transform: translateX(0);
+    transition: all 0.35s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+  &__circle--on {
+    background: $baseColor;
+    transform: translateX(30px);
+    transition: all 0.35s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+}
+.wnt-switch--disable {
+  border: 1px solid $disableColor;
+  .wnt-switch__circle {
+    background: $disableColor;
+  }
+}
