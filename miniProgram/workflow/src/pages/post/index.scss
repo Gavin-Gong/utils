@@ -1,36 +1,16 @@
 @import '../../styles/mixins';
 
-#feed {
-  .item {
-    display: flex;
-    border: 1rpx solid #eee; 
-    .headimg {
-      // width: 180rpx;
-      height: 180rpx;
+#post {
+  .img-list {
+    background: #fff;
+    .img-list__item {
+      width: 100px;
+      height: 100px;
     }
-    .item__box {
-      display: inline-flex;
-      justify-content: space-between;
-      flex-direction: column;
-    }
-    &__title {
-      font-size: 18px;
-      @include line-clamp();
-    }
-    &__desc {
-      display: block;
-      font-size: 12px;
-      @include line-clamp(2)
-    }
-    &__info {
-      &__item {
-        font-size: 14px;
-        display: inline-block;
-      }
-      button {
-        width: 20px;
-        padding: 0;
-      }
+    .img-list__btn {
+      width: 50px;
+      height: 50px;
+      background: #eee;
     }
   }
 }

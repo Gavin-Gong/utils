@@ -1,2 +1,3 @@
 @import "./switch/index.wxss";
 @import "./checkbox/index.wxss";
+@import "./cell/index.wxss";

@@ -14,6 +14,7 @@ App({
     var logs = wx.getStorageSync('logs') || [];
     logs.unshift(Date.now());
     wx.setStorageSync('logs', logs);
+    this.login();
   },
   onShow: function onShow() {
     // start track
@@ -37,6 +38,28 @@ App({
         }
       });
     }
+  },
+  login: function login() {
+    wx.$checkSession().then(function (res) {
+      console.log('is login');
+    });
+
+    wx.checkSession({
+      success: function success() {
+        console.log('is login');
+      },
+      fail: function fail(err) {
+        console.log(err);
+        wx.login({
+          success: function success(res) {
+            console.log(res);
+          },
+          fail: function fail(err) {
+            console.log(err);
+          }
+        });
+      }
+    });
   },
 
   globalData: {

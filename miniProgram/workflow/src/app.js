@@ -12,6 +12,7 @@ App({
     let logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    this.login()
   },
   onShow () {
     // start track
@@ -35,6 +36,28 @@ App({
         }
       })
     }
+  },
+  login () {
+    wx.$checkSession().then(res => {
+      console.log('is login')
+    })
+
+    wx.checkSession({
+      success () {
+        console.log('is login')
+      },
+      fail (err) {
+        console.log(err)
+        wx.login({
+          success (res) {
+            console.log(res)
+          },
+          fail (err) {
+            console.log(err)
+          }
+        })
+      }
+    })
   },
   globalData: {
     userInfo: null

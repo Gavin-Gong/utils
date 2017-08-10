@@ -1,7 +1,7 @@
 <template name="wnt-loadmore">
   <block wx:if="{{nomore}}">
     <view class="wnt-loadmore wnt-loadmore--nomore">
-        loading....
+      loading....
     </view>
   </block>
 
@@ -13,7 +13,7 @@
 
   <block wx:elif="{{loading}}">
     <view class="wnt-loadmore wnt-loadmore--loading">
-
+      loading
     </view>
   </block>
 </template>

@@ -1,0 +1,7 @@
+.wnt-cell {
+  margin: 10px 0;
+}
+
+.wnt-cell::first-child {
+  margin-top: 0;
+}
